@@ -1,4 +1,4 @@
-export default function Dice({ numSides }) {
+export default function Dice({ numSides = 6 }) {
   const roll = Math.floor(Math.random() * numSides) + 1;
   return (
     <p>
