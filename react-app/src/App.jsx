@@ -1,5 +1,5 @@
 import "./App.css";
-import Chicken from "./Chicken";
+import Chicken from "./Chicken.jsx";
 import Greeter from "./Greeter.jsx";
 import Dice from "./Dice.jsx";
 
