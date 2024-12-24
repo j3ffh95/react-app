@@ -3,11 +3,14 @@ import Chicken from "./Chicken.jsx";
 import Greeter from "./Greeter.jsx";
 import Dice from "./Dice.jsx";
 import ListPicker from "../ListPicker.jsx";
-import DoubleDice from "../DoubleDice.jsx";
+import DoubleDice from "./DoubleDice.jsx";
+import Heading from "./Heading.jsx";
 
 function App() {
   return (
     <div>
+      <Heading color='magenta' text='Welcome' fontSize='20px' />
+      <Heading text='hello' />
       <DoubleDice />
       <DoubleDice />
       <DoubleDice />
