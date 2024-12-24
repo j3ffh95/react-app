@@ -6,6 +6,7 @@ import Dice from "./Dice.jsx";
 function App() {
   return (
     <div>
+      <Chicken />
       <Greeter person='Jeff' age='29' />
       <Greeter age='29' />
       <Greeter person='Rosa' age='29' />
