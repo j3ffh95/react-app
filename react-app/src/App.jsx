@@ -6,6 +6,7 @@ import ListPicker from "../ListPicker.jsx";
 import DoubleDice from "./DoubleDice.jsx";
 import Heading from "./Heading.jsx";
 import ColorList from "./ColorList.jsx";
+import Slots from "./Slots.jsx";
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
       <Dice numSides={20} />
       <Dice />
       <Dice numSides={10} /> */}
-      <ColorList
+      {/* <ColorList
         colors={["red", "orange", "yellow", "green", "blue", "PURPLE"]}
-      />
+      /> */}
+      <Slots val1='d' val2='d' val3='d' />
     </div>
   );
 }
