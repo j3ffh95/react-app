@@ -5,11 +5,12 @@ import Dice from "./Dice.jsx";
 import ListPicker from "../ListPicker.jsx";
 import DoubleDice from "./DoubleDice.jsx";
 import Heading from "./Heading.jsx";
+import ColorList from "./ColorList.jsx";
 
 function App() {
   return (
     <div>
-      <Heading color='magenta' text='Welcome' fontSize='20px' />
+      {/* <Heading color='magenta' text='Welcome' fontSize='20px' />
       <Heading text='hello' />
       <DoubleDice />
       <DoubleDice />
@@ -21,7 +22,10 @@ function App() {
       <Greeter person='Rosa' age='29' />
       <Dice numSides={20} />
       <Dice />
-      <Dice numSides={10} />
+      <Dice numSides={10} /> */}
+      <ColorList
+        colors={["red", "orange", "yellow", "green", "blue", "PURPLE"]}
+      />
     </div>
   );
 }
