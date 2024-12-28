@@ -8,6 +8,13 @@ import Heading from "./Heading.jsx";
 import ColorList from "./ColorList.jsx";
 import Slots from "./Slots.jsx";
 
+const data = [
+  { item: "eggs", quantity: 12, completer: true },
+  { item: "milk", quantity: 1, completer: false },
+  { item: "bacon", quantity: 3, completer: true },
+  { item: "sausage", quantity: 1, completer: false },
+];
+
 function App() {
   return (
     <div>
