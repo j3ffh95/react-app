@@ -8,12 +8,22 @@ import Heading from "./Heading.jsx";
 import ColorList from "./ColorList.jsx";
 import Slots from "./Slots.jsx";
 import ShoppingList from "./ShoppingList.jsx";
+import Properties from "./Properties.jsx";
 
 const data = [
   { id: 1, name: "eggs", quantity: 12, completed: true },
   { id: 2, name: "milk", quantity: 1, completed: false },
   { id: 3, name: "bacon", quantity: 3, completed: true },
   { id: 4, name: "sausage", quantity: 1, completed: false },
+];
+
+const properties = [
+  { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
+  { id: 129331, name: "Lone Mountain Cabin", rating: 4.8, price: 250 },
+  { id: 129032, name: "Cactus Retreat", rating: 4.75, price: 300 },
+  { id: 129033, name: "Redwood Treehouse Escape", rating: 4.9, price: 120 },
+  { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
+  { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
 
 function App() {
@@ -38,7 +48,8 @@ function App() {
       <Slots val1='🍒' val2='🍒' val3='🍒' />
       <Slots val1='🍒' val2='🍒' val3='🥶' />
       <Slots val1='🥶' val2='🥶' val3='🥶' /> */}
-      <ShoppingList items={data} />
+      {/* <ShoppingList items={data} /> */}
+      <Properties properties={properties} />
     </div>
   );
 }
