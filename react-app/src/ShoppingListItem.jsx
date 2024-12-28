@@ -1,3 +1,5 @@
+// import PropTypes from "prop-types";
+
 function ShoppingListItem({ name, quantity, completed }) {
   const styles = {
     color: completed ? "firebrick" : "green",
@@ -9,6 +11,13 @@ function ShoppingListItem({ name, quantity, completed }) {
     </li>
   );
 }
+
+// Adding propTypes to the component
+// ShoppingListItem.propTypes = {
+//   name: PropTypes.string,
+//   quantity: PropTypes.number,
+//   completed: PropTypes.bool,
+// };
 
 export default ShoppingListItem;
 
