@@ -23,11 +23,13 @@ function App() {
       <Greeter person='Rosa' age='29' />
       <Dice numSides={20} />
       <Dice />
-      <Dice numSides={10} /> */}
-      {/* <ColorList
+      <Dice numSides={10} />
+      <ColorList
         colors={["red", "orange", "yellow", "green", "blue", "PURPLE"]}
-      /> */}
-      <Slots val1='d' val2='d' val3='d' />
+      />
+      <Slots val1='🍒' val2='🍒' val3='🍒' />
+      <Slots val1='🍒' val2='🍒' val3='🥶' />
+      <Slots val1='🥶' val2='🥶' val3='🥶' /> */}
     </div>
   );
 }
