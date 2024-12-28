@@ -10,10 +10,10 @@ import Slots from "./Slots.jsx";
 import ShoppingList from "./ShoppingList.jsx";
 
 const data = [
-  { name: "eggs", quantity: 12, completed: true },
-  { name: "milk", quantity: 1, completed: false },
-  { name: "bacon", quantity: 3, completed: true },
-  { name: "sausage", quantity: 1, completed: false },
+  { id: 1, name: "eggs", quantity: 12, completed: true },
+  { id: 2, name: "milk", quantity: 1, completed: false },
+  { id: 3, name: "bacon", quantity: 3, completed: true },
+  { id: 4, name: "sausage", quantity: 1, completed: false },
 ];
 
 function App() {
