@@ -5,6 +5,7 @@ function ShoppingList({ items }) {
       <ul>
         {items.map(item => (
           <li
+            key={item.id}
             style={{
               color: item.completed ? "firebrick" : "grey",
               textDecoration: item.completed ? "line-through" : "none",
