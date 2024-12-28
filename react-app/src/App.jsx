@@ -7,12 +7,13 @@ import DoubleDice from "./DoubleDice.jsx";
 import Heading from "./Heading.jsx";
 import ColorList from "./ColorList.jsx";
 import Slots from "./Slots.jsx";
+import ShoppingList from "./ShoppingList.jsx";
 
 const data = [
-  { item: "eggs", quantity: 12, completer: true },
-  { item: "milk", quantity: 1, completer: false },
-  { item: "bacon", quantity: 3, completer: true },
-  { item: "sausage", quantity: 1, completer: false },
+  { name: "eggs", quantity: 12, completed: true },
+  { name: "milk", quantity: 1, completed: false },
+  { name: "bacon", quantity: 3, completed: true },
+  { name: "sausage", quantity: 1, completed: false },
 ];
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Slots val1='🍒' val2='🍒' val3='🍒' />
       <Slots val1='🍒' val2='🍒' val3='🥶' />
       <Slots val1='🥶' val2='🥶' val3='🥶' /> */}
+      <ShoppingList items={data} />
     </div>
   );
 }
