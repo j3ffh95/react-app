@@ -9,6 +9,7 @@ import ColorList from "./ColorList.jsx";
 import Slots from "./Slots.jsx";
 import ShoppingList from "./ShoppingList.jsx";
 import Properties from "./Properties.jsx";
+import Clicker from "./Clicker.jsx";
 
 const data = [
   { id: 1, name: "eggs", quantity: 12, completed: true },
@@ -50,7 +51,8 @@ function App() {
       <Slots val1='🍒' val2='🍒' val3='🥶' />
       <Slots val1='🥶' val2='🥶' val3='🥶' /> */}
       {/* <ShoppingList items={data} /> */}
-      <Properties properties={properties} />
+      {/* <Properties properties={properties} /> */}
+      <Clicker />
     </div>
   );
 }
