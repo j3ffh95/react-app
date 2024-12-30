@@ -1,4 +1,5 @@
-function handleFormSubmit() {
+function handleFormSubmit(e) {
+  e.preventDefault();
   console.log("Submitted form");
 }
 
