@@ -6,7 +6,7 @@ export default function Clicker() {
   return (
     <div>
       <p>Click the Button</p>
-      <button onclick={handleClick}>Click</button>
+      <button onMouseOver={handleClick}>Click</button>
     </div>
   );
 }
