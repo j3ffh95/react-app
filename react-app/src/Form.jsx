@@ -1,6 +1,10 @@
+function handleFormSubmit() {
+  console.log("Submitted form");
+}
+
 export default function Form() {
   return (
-    <form>
+    <form onSubmit={handleFormSubmit}>
       <button>Submit</button>
     </form>
   );
