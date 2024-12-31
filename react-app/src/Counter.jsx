@@ -1,9 +1,11 @@
 export default function Counter() {
+  const incrementNum = () => (num += 1);
+
   let num = 0;
   return (
     <div>
       <p>The count is: {num}</p>
-      <button>Increment</button>
+      <button onClick={incrementNum}>Increment</button>
     </div>
   );
 }
