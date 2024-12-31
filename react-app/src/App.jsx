@@ -33,7 +33,7 @@ const properties = [
 function App() {
   return (
     <div>
-      <Counter />
+      <Counter num='1' />
       {/* <Form /> */}
       {/* <Heading color='magenta' text='Welcome' fontSize='20px' />
       <Heading text='hello' />
@@ -56,10 +56,10 @@ function App() {
       <Slots val1='🥶' val2='🥶' val3='🥶' /> */}
       {/* <ShoppingList items={data} /> */}
       {/* <Properties properties={properties} /> */}
-      <Clicker
+      {/* <Clicker
         message='Please Stop Clicking Me!!'
         buttonText='Do Not Click Me!'
-      />
+      /> */}
     </div>
   );
 }

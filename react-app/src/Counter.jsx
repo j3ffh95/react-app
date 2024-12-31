@@ -1,7 +1,10 @@
-export default function Counter() {
-  const incrementNum = () => (num += 1);
+export default function Counter({ num }) {
+  const incrementNum = () => {
+    num += 1;
+    console.log(num);
+  };
 
-  let num = 0;
+  //   let num = 0;
   return (
     <div>
       <p>The count is: {num}</p>
