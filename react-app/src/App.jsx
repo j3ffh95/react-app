@@ -33,7 +33,7 @@ const properties = [
 function App() {
   return (
     <div>
-      <Counter num='1' />
+      <Counter num={1} />
       {/* <Form /> */}
       {/* <Heading color='magenta' text='Welcome' fontSize='20px' />
       <Heading text='hello' />
