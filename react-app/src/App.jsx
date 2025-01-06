@@ -12,6 +12,7 @@ import Properties from "./Properties.jsx";
 import Clicker from "./Clicker.jsx";
 import Form from "./Form.jsx";
 import Counter from "./Counter.jsx";
+import Toggler from "./Toggler.jsx";
 
 const data = [
   { id: 1, name: "eggs", quantity: 12, completed: true },
@@ -33,7 +34,8 @@ const properties = [
 function App() {
   return (
     <div>
-      <Counter num={1} />
+      <Toggler />
+      {/* <Counter num={1} /> */}
       {/* <Form /> */}
       {/* <Heading color='magenta' text='Welcome' fontSize='20px' />
       <Heading text='hello' />
