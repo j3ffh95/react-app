@@ -14,6 +14,7 @@ import Form from "./Form.jsx";
 import Counter from "./Counter.jsx";
 import Toggler from "./Toggler.jsx";
 import ToggleCounter from "./ToggleCounter.jsx";
+import ColorBox from "./ColorBox.jsx";
 
 const data = [
   { id: 1, name: "eggs", quantity: 12, completed: true },
@@ -53,7 +54,8 @@ const colors = [
 function App() {
   return (
     <div>
-      <ToggleCounter />
+      <ColorBox />
+      {/* <ToggleCounter /> */}
       {/* <Counter num={1} /> */}
       {/* <Form /> */}
       {/* <Heading color='magenta' text='Welcome' fontSize='20px' />
