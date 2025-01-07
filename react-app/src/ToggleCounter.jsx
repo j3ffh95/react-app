@@ -9,7 +9,8 @@ export default function ToggleCounter() {
       <p style={{ cursor: "pointer" }} onClick={toggleIsHappy}>
         {isHappy ? "😁" : "🤪"}
       </p>
-      <button onClick={incrementCount}>{count}</button>
+      <p>{count}</p>
+      <button onClick={incrementCount}>+2</button>
     </>
   );
 }
