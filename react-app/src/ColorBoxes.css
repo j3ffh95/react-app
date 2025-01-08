@@ -1,5 +1,6 @@
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
+  width: 350px;
+  justify-content: center;
 }

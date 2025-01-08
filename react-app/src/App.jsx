@@ -55,7 +55,8 @@ const colors = [
 function App() {
   return (
     <div>
-      <ColorBoxes colors={colors} count={45} />
+      <ColorBoxes count={12} />
+      {/* <ColorBox colorsList={colors} /> */}
       {/* <ToggleCounter /> */}
       {/* <Counter num={1} /> */}
       {/* <Form /> */}
