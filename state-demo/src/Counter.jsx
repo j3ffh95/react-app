@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Counter() {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(0);
   const incrementByOne = () => setCount(count + 1);
   const incrementByThree = () => {
     setCount(prevCount => prevCount + 1);
