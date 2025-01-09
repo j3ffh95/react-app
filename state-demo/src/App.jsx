@@ -9,6 +9,7 @@ function App() {
     <>
       <h1>State Demo</h1>
       <Counter />
+      <Counter />
     </>
   );
 }
