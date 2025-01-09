@@ -8,12 +8,20 @@ export default function Counter() {
     setCount(prevCount => prevCount + 1);
     setCount(prevCount => prevCount + 1);
   };
+
+  const incrementByFive = () => {
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+  };
   return (
     <>
       <p>{count}</p>
       <button onClick={incrementByOne}>+1</button>
       <button onClick={incrementByThree}>+3</button>
-      <button onClick={incrementByThree}>+5</button>
+      <button onClick={incrementByFive}>+5</button>
     </>
   );
 }
