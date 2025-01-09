@@ -13,6 +13,7 @@ export default function Counter() {
       <p>{count}</p>
       <button onClick={incrementByOne}>+1</button>
       <button onClick={incrementByThree}>+3</button>
+      <button onClick={incrementByThree}>+5</button>
     </>
   );
 }
