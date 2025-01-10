@@ -6,5 +6,7 @@ function generateGameBoard() {
 }
 export default function Dumbo() {
   const [board, setBoard] = useState(generateGameBoard());
-  return <button>Click me to change state</button>;
+  return (
+    <button onClick={() => setBoard("Hello")}>Click me to change state</button>
+  );
 }
