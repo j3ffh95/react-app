@@ -5,9 +5,8 @@ export default function ScoreKeeper() {
   const [scores, setScores] = useState({ p1Score: 0, p2Score: 0 });
 
   const increaseP1Score = () => {
-    scores.p1Score += 1;
-    console.log(scores);
-    setScores(scores);
+    const newScores = { ...scores, p1Score: scores.p1Score + 1 };
+    setScores(newScores);
   };
   return (
     <div>
