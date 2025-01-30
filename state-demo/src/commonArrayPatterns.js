@@ -7,3 +7,6 @@ const shoppingCart = [
 
 // ADDING TO AN ARRAY
 [...shoppingCart, { id: 4, product: "Coffee Mug", price: 7.99 }];
+
+// REMOVING AN ELEMENTS
+shoppingCart.filter(item => item.id !== 2);
