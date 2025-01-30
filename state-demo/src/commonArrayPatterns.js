@@ -18,3 +18,12 @@ shoppingCart.map(item => {
     product: item.product.toLowerCase(),
   };
 });
+
+// MODIFYING A PARTICULAR ELEMENT IN AN ARRAY
+shoppingCart.map(item => {
+  if (item.id === 3) {
+    return { ...item, price: 10.99 };
+  } else {
+    return item;
+  }
+});
