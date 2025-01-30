@@ -8,5 +8,13 @@ const shoppingCart = [
 // ADDING TO AN ARRAY
 [...shoppingCart, { id: 4, product: "Coffee Mug", price: 7.99 }];
 
-// REMOVING AN ELEMENTS
+// REMOVING AN ELEMENT
 shoppingCart.filter(item => item.id !== 2);
+
+// UPDATING ALL ELEMENTS IN AN ARRAY
+shoppingCart.map(item => {
+  return {
+    ...item,
+    product: item.product.toLowerCase(),
+  };
+});
