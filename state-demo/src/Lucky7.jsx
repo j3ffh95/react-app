@@ -11,13 +11,15 @@ function Lucky7() {
   }
 
   return (
-    <mainn className='Lucky7'>
+    <main className='Lucky7'>
       <h1>Lucky7 {won && "You Won!"}</h1>
       <section className='Lucky7-dice'>
         <div className='Lucky7-die'>{dice[0]}</div>
         <div className='Lucky7-die'>{dice[1]}</div>
       </section>
       <button onClick={roll}>Roll Again!</button>
-    </mainn>
+    </main>
   );
 }
+
+export default Lucky7;
