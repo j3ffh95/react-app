@@ -8,11 +8,13 @@ import ScoreKeeper from "./ScoreKeeper";
 import EmojiClicker from "./EmojiClicker";
 import Lucky7 from "./Lucky7";
 import Die from "./Die";
+import Dice from "./Dice";
 
 function App() {
   return (
     <>
-      <Die val='2' />
+      <Dice dice={[1, 2, 3]} />
+      {/* <Die val='2' /> */}
       {/* {<Lucky7 />} */}
       {/* <h1>State Demo</h1> */}
       {/* <ScoreKeeper numPlayers={10} target={3} /> */}
