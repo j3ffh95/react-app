@@ -7,11 +7,13 @@ import Dumbo from "./Dumbo";
 import ScoreKeeper from "./ScoreKeeper";
 import EmojiClicker from "./EmojiClicker";
 import Lucky7 from "./Lucky7";
+import Die from "./Die";
 
 function App() {
   return (
     <>
-      {<Lucky7 />}
+      <Die val='2' />
+      {/* {<Lucky7 />} */}
       {/* <h1>State Demo</h1> */}
       {/* <ScoreKeeper numPlayers={10} target={3} /> */}
       {/* <EmojiClicker /> */}
