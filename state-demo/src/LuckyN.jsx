@@ -4,6 +4,7 @@ import Dice from "./Dice";
 function LuckyN({ numDice = 2, goal = 7 }) {
   const [dice, setDice] = useState(getRolls(numDice));
   const isWinner = sum(dice) === goal;
+  const roll = () => setDice(getRolls(numDice));
   return (
     <main className='LuckyN'>
       <h1>
