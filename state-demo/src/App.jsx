@@ -11,7 +11,7 @@ import Die from "./Die";
 import Dice from "./Dice";
 import LuckyN from "./LuckyN";
 import { sum } from "./utils";
-import Box from "./Box";
+import BoxGrid from "./BoxGrid";
 
 function lessThan4(dice) {
   return sum(dice) < 4;
@@ -24,9 +24,7 @@ function sameNums(dice) {
 function App() {
   return (
     <>
-      <Box />
-      <Box />
-      <Box />
+      <BoxGrid />
       {/* <LuckyN title='Roll less than 4!' winCheck={lessThan4} />
       <LuckyN title='Roll the same numbers!' winCheck={sameNums} /> */}
       {/* <Dice dice={[1, 2, 3]} />
