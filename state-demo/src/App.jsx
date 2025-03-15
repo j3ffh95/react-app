@@ -14,7 +14,8 @@ import LuckyN from "./LuckyN";
 function App() {
   return (
     <>
-      <LuckyN goal={7} />
+      <LuckyN />
+      <LuckyN numDice={3} goal={11} />
       {/* <Dice dice={[1, 2, 3]} />
       <Dice dice={[1, 2, 3, 5, 2, 5, 8]} color='green' />
       <Dice dice={[1, 2, 3]} /> */}
