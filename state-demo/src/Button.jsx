@@ -1,9 +1,9 @@
 import "./Button.css";
 
-function Button({ clickFunction }) {
+function Button({ clickFunction, label = "Click Me" }) {
   return (
     <button onClick={clickFunction} className='Button'>
-      Click me
+      {label}
     </button>
   );
 }

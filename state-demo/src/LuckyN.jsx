@@ -12,8 +12,8 @@ function LuckyN({ numDice = 2, winCheck, title }) {
         {title}: {isWinner && "You Win!"}
       </h1>
       <Dice dice={dice} />
-      <button onClick={roll}>Re-Roll Dice</button>
-      <Button clickFunction={roll} />
+      {/* <button onClick={roll}>Re-Roll Dice</button> */}
+      <Button clickFunction={roll} label='Re-roll' />
     </main>
   );
 }
