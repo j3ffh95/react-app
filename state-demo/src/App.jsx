@@ -9,13 +9,15 @@ import EmojiClicker from "./EmojiClicker";
 import Lucky7 from "./Lucky7";
 import Die from "./Die";
 import Dice from "./Dice";
+import LuckyN from "./LuckyN";
 
 function App() {
   return (
     <>
-      <Dice dice={[1, 2, 3]} />
+      <LuckyN goal={40} />
+      {/* <Dice dice={[1, 2, 3]} />
       <Dice dice={[1, 2, 3, 5, 2, 5, 8]} color='green' />
-      <Dice dice={[1, 2, 3]} />
+      <Dice dice={[1, 2, 3]} /> */}
       {/* <Die val='2' /> */}
       {/* {<Lucky7 />} */}
       {/* <h1>State Demo</h1> */}

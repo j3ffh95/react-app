@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getRolls } from "./utils";
+import { getRolls, sum } from "./utils";
 import Dice from "./Dice";
 function LuckyN({ numDice = 2, goal = 7 }) {
   const [dice, setDice] = useState(getRolls(numDice));
