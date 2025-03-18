@@ -24,7 +24,7 @@ function sameNums(dice) {
 function App() {
   return (
     <>
-      <BoxGrid />
+      <BoxGrid numberOfBoxes={40} />
       {/* <LuckyN title='Roll less than 4!' winCheck={lessThan4} />
       <LuckyN title='Roll the same numbers!' winCheck={sameNums} /> */}
       {/* <Dice dice={[1, 2, 3]} />

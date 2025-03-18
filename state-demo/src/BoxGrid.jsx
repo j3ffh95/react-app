@@ -5,6 +5,9 @@ function BoxGrid({ numberOfBoxes = 9 }) {
   const reset = () => {
     setBoxes(Array(numberOfBoxes).fill(false));
   };
+  const allActive = () => {
+    setBoxes(Array(numberOfBoxes).fill(true));
+  };
 
   const toggleBox = idx => {
     setBoxes(prevBoxes => {
@@ -24,6 +27,7 @@ function BoxGrid({ numberOfBoxes = 9 }) {
         <Box key={idx} isActive={b} toggle={() => toggleBox(idx)} />
       ))}
       <button onClick={reset}>Reset</button>
+      <button onClick={allActive}>All Active</button>
     </div>
   );
 }
