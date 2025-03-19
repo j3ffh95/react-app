@@ -8,11 +8,13 @@ function UsernameForm() {
   };
   return (
     <div>
+      <label htmlFor='username'>Enter a username</label>
       <input
         type='text'
         placeholder='Username'
         value={username}
         onChange={updateUsername}
+        id='username'
       />
       <button>Submit</button>
     </div>
