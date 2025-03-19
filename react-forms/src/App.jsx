@@ -1,10 +1,10 @@
+import Username from "./UsernameForm";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <input type='text' />
-      <button>Submit</button>
+      <Username />
     </>
   );
 }
