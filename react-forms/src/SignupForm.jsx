@@ -11,6 +11,11 @@ function SignupForm() {
     // console.log(event.target.value);
     setLastName(event.target.value);
   };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log(firstName, lastName);
+  };
   return (
     <div>
       <label htmlFor='firstName'>Enter a first name: </label>
@@ -29,7 +34,7 @@ function SignupForm() {
         onChange={updateLastName}
         id='lastName'
       />
-      <button>Submit</button>
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 }
