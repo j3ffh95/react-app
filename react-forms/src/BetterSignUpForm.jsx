@@ -1,7 +1,11 @@
 import { useState } from "react";
 
 function BetterSignUpForm() {
-  const [formData, setFormData] = useState({ firstName: "", lastName: "" });
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    password: "",
+  });
 
   const handleChange = event => {
     const changedField = event.target.name;
@@ -13,7 +17,7 @@ function BetterSignUpForm() {
   };
 
   const handleSubmit = () => {
-    console.log(formData.firstName);
+    console.log(formData);
   };
   return (
     <div>
@@ -34,6 +38,15 @@ function BetterSignUpForm() {
         onChange={handleChange}
         name='lastName'
         id='lastName'
+      />
+      <label htmlFor='password'>Enter a password: </label>
+      <input
+        type='password'
+        placeholder='Password'
+        value={formData.password}
+        onChange={handleChange}
+        name='password'
+        id='password'
       />
       <button onClick={handleSubmit}>Submit</button>
     </div>
