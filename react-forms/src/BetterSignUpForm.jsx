@@ -6,7 +6,14 @@ function BetterSignUpForm() {
   const handleChange = event => {
     const changedField = event.target.name;
     const newValue = event.target.value;
-    console.log(changedField, newValue);
+    setFormData(currData => {
+      currData[changedField] = newValue;
+      return { ...currData };
+    });
+  };
+
+  const handleSubmit = () => {
+    console.log(formData.firstName);
   };
   return (
     <div>
@@ -25,7 +32,7 @@ function BetterSignUpForm() {
         placeholder='Last Name'
         value={formData.lastName}
         onChange={handleChange}
-        name='firstName'
+        name='lastName'
         id='lastName'
       />
       <button onClick={handleSubmit}>Submit</button>
