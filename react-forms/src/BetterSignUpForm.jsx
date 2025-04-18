@@ -3,9 +3,10 @@ import { useState } from "react";
 function BetterSignUpForm() {
   const [formData, setFormData] = useState({ firstName: "", lastName: "" });
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    console.log(firstName, lastName);
+  const handleChange = event => {
+    const changedField = event.target.name;
+    const newValue = event.target.value;
+    console.log(changedField, newValue);
   };
   return (
     <div>
@@ -13,16 +14,18 @@ function BetterSignUpForm() {
       <input
         type='text'
         placeholder='First Name'
-        value={firstName}
-        onChange={updateFirstName}
+        value={formData.firstName}
+        onChange={handleChange}
+        name='firstName'
         id='firstName'
       />
       <label htmlFor='lastName'>Enter a last name: </label>
       <input
         type='text'
         placeholder='Last Name'
-        value={lastName}
-        onChange={updateLastName}
+        value={formData.lastName}
+        onChange={handleChange}
+        name='firstName'
         id='lastName'
       />
       <button onClick={handleSubmit}>Submit</button>
