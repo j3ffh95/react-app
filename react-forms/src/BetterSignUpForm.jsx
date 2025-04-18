@@ -11,8 +11,7 @@ function BetterSignUpForm() {
     const changedField = event.target.name;
     const newValue = event.target.value;
     setFormData(currData => {
-      currData[changedField] = newValue;
-      return { ...currData };
+      return { ...currData, [changedField]: newValue };
     });
   };
 
