@@ -1,16 +1,7 @@
 import { useState } from "react";
 
 function BetterSignUpForm() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const updateFirstName = event => {
-    // console.log(event.target.value);
-    setFirstName(event.target.value);
-  };
-  const updateLastName = event => {
-    // console.log(event.target.value);
-    setLastName(event.target.value);
-  };
+  const [formData, setFormData] = useState({ firstName: "", lastName: "" });
 
   const handleSubmit = event => {
     event.preventDefault();
